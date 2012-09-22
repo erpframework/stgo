@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STGO", "STGO\STGO.csproj", "{FE0882E8-7E3A-4816-9F90-38AB4BDFD334}"
+	ProjectSection(ProjectDependencies) = postProject
+		{85116091-71F3-4420-8E61-22970558206F} = {85116091-71F3-4420-8E61-22970558206F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "business", "..\business\business\business.csproj", "{85116091-71F3-4420-8E61-22970558206F}"
 EndProject
