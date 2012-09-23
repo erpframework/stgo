@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace STGO
 {
-    public partial class Formulario_web2 : System.Web.UI.Page
+    public partial class miperfil : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

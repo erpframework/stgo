@@ -55,9 +55,10 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="Formulario web1.aspx" />
-    <Content Include="Formulario web2.aspx" />
-    <Content Include="Formulario web3.aspx" />
+    <Content Include="miperfil.aspx" />
+    <Content Include="salas.aspx" />
+    <Content Include="turnos.aspx" />
+    <Content Include="empresas.aspx" />
     <Content Include="images\logo.png" />
     <Content Include="images\ruido.png" />
     <Content Include="Styles\960.css" />
@@ -113,6 +114,27 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="miperfil.aspx.cs">
+      <DependentUpon>miperfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="miperfil.aspx.designer.cs">
+      <DependentUpon>miperfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="salas.aspx.cs">
+      <DependentUpon>salas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salas.aspx.designer.cs">
+      <DependentUpon>salas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="turnos.aspx.cs">
+      <DependentUpon>turnos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="turnos.aspx.designer.cs">
+      <DependentUpon>turnos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -120,26 +142,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Formulario web1.aspx.cs">
-      <DependentUpon>Formulario web1.aspx</DependentUpon>
+    <Compile Include="empresas.aspx.cs">
+      <DependentUpon>empresas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Formulario web1.aspx.designer.cs">
-      <DependentUpon>Formulario web1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Formulario web2.aspx.cs">
-      <DependentUpon>Formulario web2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Formulario web2.aspx.designer.cs">
-      <DependentUpon>Formulario web2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Formulario web3.aspx.cs">
-      <DependentUpon>Formulario web3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Formulario web3.aspx.designer.cs">
-      <DependentUpon>Formulario web3.aspx</DependentUpon>
+    <Compile Include="empresas.aspx.designer.cs">
+      <DependentUpon>empresas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

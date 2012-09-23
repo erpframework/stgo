@@ -10,6 +10,6 @@
 namespace STGO {
     
     
-    public partial class Formulario_web2 {
+    public partial class miperfil {
     }
 }

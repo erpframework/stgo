@@ -8,10 +8,15 @@
     <link href="~/Styles/960.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/reset.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="/Scripts/jquery-1.4.1.js"></script>
+        <script type="text/javascript" src="/Scripts/jquery-1.4.1.min.js"></script>
+        <script type="text/javascript" src="/Scripts/jquery-1.4.1-vsdoc.js"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
+<form runat="server" id="form">
     <div class="container_12" id="encabezado">
         <div class="grid_11">
             <img src="images/logo.png" alt="STGO - Sistema de Turnos Genérico Online" />
@@ -31,5 +36,6 @@
                 Diseñado por Fichera-Margenats</p>
         </div>
     </div>
+    </form>
 </body>
 </html>
