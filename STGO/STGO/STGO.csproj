@@ -55,8 +55,13 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Formulario web1.aspx" />
+    <Content Include="Formulario web2.aspx" />
+    <Content Include="Formulario web3.aspx" />
     <Content Include="images\logo.png" />
+    <Content Include="images\ruido.png" />
     <Content Include="Styles\960.css" />
+    <Content Include="Styles\league.svg" />
     <Content Include="Styles\reset.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -115,8 +120,36 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Formulario web1.aspx.cs">
+      <DependentUpon>Formulario web1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario web1.aspx.designer.cs">
+      <DependentUpon>Formulario web1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario web2.aspx.cs">
+      <DependentUpon>Formulario web2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario web2.aspx.designer.cs">
+      <DependentUpon>Formulario web2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario web3.aspx.cs">
+      <DependentUpon>Formulario web3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario web3.aspx.designer.cs">
+      <DependentUpon>Formulario web3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaConMenu.master.cs">
+      <DependentUpon>PaginaConMenu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaConMenu.master.designer.cs">
+      <DependentUpon>PaginaConMenu.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -133,6 +166,23 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PaginaConMenu.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\STGO\STGO.skin" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Styles\league.eot" />
+    <None Include="Styles\league.otf" />
+    <None Include="Styles\league.ttf" />
+    <None Include="Styles\league.woff" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

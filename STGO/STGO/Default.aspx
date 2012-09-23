@@ -1,19 +1,25 @@
-﻿<%@ Page Title="Página principal" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+﻿<%@ Page Title="STGO - Bienvenidos" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
     CodeBehind="Default.aspx.cs" Inherits="STGO._Default" %>
-
-<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
-<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
- <div class="grid_12">
-    <h2>
-        ASP.NET commiteado
-    </h2>
-    <p>
-        Para obtener más información acerca de ASP.NET, visite <a href="http://www.asp.net" title="Sitio web de ASP.NET">www.asp.net</a>.
-    </p>
-    <p>
-        También puede encontrar <a href="http://go.microsoft.com/fwlink/?LinkID=152368"
-            title="Documentación de ASP.NET en MSDN">documentación sobre ASP.NET en MSDN</a>.
-    </p>
-    </div>
+<asp:Content ID="Content2" ContentPlaceHolderID="MenuContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+<div class="grid_12">
+<h1>Bienvenidos</h1>
+</div>
+<div class="clear"></div>
+<div class="grid_6">
+
+<h2>Ingrese al Sistema</h2>
+
+</div>
+
+<div class="grid_6  columnaDestacada" >
+<div class="grid_5 " >
+<h2>Registre su Empresa</h2>
+<br /><br /><br /><br /><br /><br /><br /><br /><br />kkk
+</div>
+</div>
+
 </asp:Content>
