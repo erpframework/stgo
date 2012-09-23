@@ -115,3 +115,12 @@ input[type="submit"]:active {
 	top:1px;
 }
 
+
+.popup
+{background-color:#FFF;
+ background-image:none;
+ text-align:center;
+ padding-top:50px;
+}
+
+
