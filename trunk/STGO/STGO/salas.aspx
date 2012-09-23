@@ -3,7 +3,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainPaginaConMenu" runat="server">
 <div class="grid_12"><h1>Salas</h1>
-<p>Administración de salas.</p>
+<asp:Label ID="lblListaEmpresas" runat="server" AssociatedControlID="liEmpresas">Seleccione una empresa: </asp:Label>
+        <asp:DropDownList ID="liEmpresas" runat="server">
+            
+        </asp:DropDownList>(sólo para superusuario)<br />
 
 </div>
 
