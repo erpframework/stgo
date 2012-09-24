@@ -34,60 +34,85 @@
             ValidationGroup="valGrupoLogin" />
         </form>
     </div>
-    <div class="grid_6  columnaDestacada">
-        <div class="grid_5 ">
+
+        <div class="grid_6 ">
             <form id="frmRegistro" action="default.aspx" method="post">
             <h2>
                 Registre su Empresa</h2>
-            <br />
-            <asp:Label ID="lblRazonSocialReg" Text="Razón Social: " runat="server" AssociatedControlID="txtRazonSocialReg" />
-            <asp:TextBox ID="txtRazonSocialReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+        </div>
+    <div class="grid_6  columnaDestacada">
+
+        <div class="grid_2 alpha">
+            <asp:Label ID="lblRazonSocialReg" Text="Razón Social: " runat="server" AssociatedControlID="txtRazonSocialReg" /></div>
+        <div class="grid_2">
+            <asp:TextBox ID="txtRazonSocialReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox></div>
+        <div class="grid_2 omega">
             <asp:RequiredFieldValidator ID="rqfRazonSocialReg" runat="server" ControlToValidate="txtRazonSocialReg"
-                ErrorMessage="Debe completar la razón social." Display="Dynamic"></asp:RequiredFieldValidator>
-            <br />
-            <asp:Label ID="lblCuitReg" Text="Cuit: " runat="server" AssociatedControlID="txtCuitReg" />
-            <asp:TextBox ID="txtCuitReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+                ErrorMessage="Debe completar la razón social." Display="Dynamic"></asp:RequiredFieldValidator></div>
+        <div class="clear">
+        </div>
+        <div class="grid_2 alpha">
+            <asp:Label ID="lblCuitReg" Text="Cuit: " runat="server" AssociatedControlID="txtCuitReg" /></div>
+        <div class="grid_2">
+            <asp:TextBox ID="txtCuitReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox></div>
+        <div class="grid_2 omega">
             <asp:RequiredFieldValidator ID="rqfCuitReg" runat="server" ControlToValidate="txtCuitReg"
-                ValidationGroup="valGrupoReg" ErrorMessage="Debe completar el cuit." Display="Dynamic"></asp:RequiredFieldValidator>
+                ValidationGroup="valGrupoReg" ErrorMessage="Debe completar el cuit." Display="Dynamic"></asp:RequiredFieldValidator></div>
+        <div class="clear">
             <asp:RegularExpressionValidator ID="revCuitReg" ErrorMessage="El formato del Cuit es inválido."
                 ControlToValidate="txtCuitReg" runat="server" ValidationExpression="\d{2}-\d{8}-\d"
-                ValidationGroup="valGrupoReg" Display="Dynamic" />
-            <br />
-            <asp:Label ID="lblTelefonoReg" Text="Teléfono: " runat="server" AssociatedControlID="txtTelefonoReg" />
-            <asp:TextBox ID="txtTelefonoReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+                ValidationGroup="valGrupoReg" Display="Dynamic" /></div>
+        <div class="grid_2 alpha">
+            <asp:Label ID="lblTelefonoReg" Text="Teléfono: " runat="server" AssociatedControlID="txtTelefonoReg" /></div>
+        <div class="grid_2">
+            <asp:TextBox ID="txtTelefonoReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox></div>
+        <div class="grid_2 omega">
             <asp:RequiredFieldValidator ID="rqfTelefonoReg" runat="server" ControlToValidate="txtTelefonoReg"
                 ErrorMessage="Debe completar el teléfono." Display="Dynamic"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="revTelefonoReg" ErrorMessage="El formato del telefono es inválido."
                 ControlToValidate="txtTelefonoReg" runat="server" ValidationGroup="valGrupoReg"
-                Display="Dynamic" ValidationExpression="/^(\(?[0-9]{3,3}\)?|[0-9]{3,3}[-. ]?)[ ][0-9]{4,4}[-. ]?[0-9]{4,4}$/" />
-            <br />
-            <asp:Label ID="lblUsuarioReg" Text="EMail: " runat="server" AssociatedControlID="txtUsuarioReg" />
-            <asp:TextBox ID="txtUsuarioReg" runat="server" ValidationGroup="valGrupoReg" ToolTip="El Email lo identificará como futuro usuario en el sistema."></asp:TextBox>
+                Display="Dynamic" ValidationExpression="/^(\(?[0-9]{3,3}\)?|[0-9]{3,3}[-. ]?)[ ][0-9]{4,4}[-. ]?[0-9]{4,4}$/" /></div>
+        <div class="clear">
+        </div>
+        <div class="grid_2 alpha">
+            <asp:Label ID="lblUsuarioReg" Text="EMail: " runat="server" AssociatedControlID="txtUsuarioReg" /></div>
+        <div class="grid_2">
+            <asp:TextBox ID="txtUsuarioReg" runat="server" ValidationGroup="valGrupoReg" ToolTip="El Email lo identificará como futuro usuario en el sistema."></asp:TextBox></div>
+        <div class="grid_2 omega">
             <asp:RequiredFieldValidator ID="rqfUsuarioReg" runat="server" ValidationGroup="valGrupoReg"
-                ErrorMessage="Debe completar el email." Display="Dynamic"></asp:RequiredFieldValidator>
+                ErrorMessage="Debe completar el email." Display="Dynamic" ControlToValidate="txtUsuarioReg"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="revUsuarioReg" runat="server" ValidationExpression="^([a-zA-Z0-9]+[a-zA-Z0-9._%-]*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4})$"
                 ErrorMessage="El email ingresado es inválido." Display="Dynamic" ControlToValidate="txtUsuarioReg"
-                ValidationGroup="valGrupoReg"></asp:RegularExpressionValidator>
-            <br />
-            <asp:Label ID="lblPasswordReg" Text="Contraseña: " runat="server" AssociatedControlID="txtPasswordReg" />
-            <asp:TextBox ID="txtPasswordReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+                ValidationGroup="valGrupoReg"></asp:RegularExpressionValidator></div>
+        <div class="clear">
+        </div>
+        <div class="grid_2 alpha">
+            <asp:Label ID="lblPasswordReg" Text="Contraseña: " runat="server" AssociatedControlID="txtPasswordReg" /></div>
+        <div class="grid_2">
+            <asp:TextBox ID="txtPasswordReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox></div>
+        <div class="grid_2 omega">
             <asp:RequiredFieldValidator ID="rqfPasswordReg" runat="server" ControlToValidate="txtPasswordReg"
-                ErrorMessage="Debe ingresar una contraseña." ValidationGroup="valGrupoReg"></asp:RequiredFieldValidator>
-            <br />
+                ErrorMessage="Debe ingresar una contraseña." ValidationGroup="valGrupoReg"></asp:RequiredFieldValidator></div>
+        <div class="clear">
+        </div>
+        <div class="grid_2 alpha">
             <asp:Label ID="lblPasswordConfirmReg" Text="Repetir Contraseña: " runat="server"
-                AssociatedControlID="txtPasswordConfirmReg" />
-            <asp:TextBox ID="txtPasswordConfirmReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+                AssociatedControlID="txtPasswordConfirmReg" /></div>
+        <div class="grid_2">
+            <asp:TextBox ID="txtPasswordConfirmReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox></div>
+        <div class="grid_2 omega">
             <asp:RequiredFieldValidator ID="rqfPasswordConfirmReg" runat="server" ControlToValidate="txtPasswordConfirmReg"
                 ErrorMessage="Debe confirmar la contraseña." ValidationGroup="valGrupoReg" Display="Dynamic"></asp:RequiredFieldValidator>
             <asp:CompareValidator ID="cmvPasswordConfirmReg" runat="server" ControlToValidate="txtPasswordConfirmReg"
                 ControlToCompare="txtPasswordReg" Operator="Equal" ValidationGroup="valGrupoReg"
-                ErrorMessage="Las contraseñas ingresadas deben ser iguales." Display="Dynamic"></asp:CompareValidator>
-            <br />
-            <br />
-            <br />
-            <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" CausesValidation="true"
-                ValidationGroup="valGrupoReg" />
-            </form>
+                ErrorMessage="Las contraseñas ingresadas deben ser iguales." Display="Dynamic"></asp:CompareValidator></div>
+        <div class="clear">
         </div>
+     <div class="grid_2 alpha">
+      <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" CausesValidation="true"
+            ValidationGroup="valGrupoReg" /> </div>
+       
+        </form>
+    </div>
     </div>
 </asp:Content>
