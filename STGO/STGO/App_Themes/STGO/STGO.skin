@@ -1,2 +1,12 @@
+<asp:RequiredFieldValidator runat="server" 
+     Font-Size="8px" ForeColor="red" padding-top="8px" />
 
 
+     <asp:RegularExpressionValidator runat="server" 
+     Font-Size="8px" ForeColor="red" padding-top="8px" />
+
+     <asp:CompareValidator runat="server" 
+     Font-Size="8px" ForeColor="red" padding-top="8px" />
+
+
+     <asp:Button runat="server" CssClass="boton" />

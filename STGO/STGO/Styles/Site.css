@@ -77,6 +77,8 @@ body
 {
  
  background-color:#BCC7D8;
+ padding-top: 5px;
+
  
 }
 
@@ -88,7 +90,7 @@ body
     height:15px;
     padding:5px 0;
 }
-input[type="submit"]{
+.boton{
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
 	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
@@ -103,14 +105,14 @@ input[type="submit"]{
 	text-decoration:none;
 }
 
-input[type="submit"]:hover {
+.boton:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
 	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
 	background-color:#dfdfdf;
 }
 
-input[type="submit"]:active {
+.boton:active {
 	position:relative;
 	top:1px;
 }
@@ -124,9 +126,10 @@ input[type="submit"]:active {
 }
 
 
-label
-{ text-align: right;
-
+.divlabel
+{
+ padding-top:8px;
+ text-align:right;   
 }
 
 
