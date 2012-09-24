@@ -9,14 +9,14 @@ namespace business
     {
         public long Id{ get; set; }
         public String EMail { get; set; }
-        public String NombreApellido{ get; set; }
+        public String Descripcion{ get; set; }
         public String Password{ get; set; }
         public Rol Rol { get; set; }
 
-        public Usuario(String eMail, String password, String nombreApellido, Rol rol) 
+        public Usuario(String eMail, String password, String descripcion, Rol rol) 
         {
             this.Rol = rol;
-            this.NombreApellido = nombreApellido;
+            this.Descripcion = descripcion;
             this.EMail = eMail;
             this.Password = password;
         }
