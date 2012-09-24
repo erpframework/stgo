@@ -11,11 +11,11 @@ namespace business
         public String EMail { get; set; }
         public String NombreApellido{ get; set; }
         public String Password{ get; set; }
-        public Perfil Perfil { get; set; }
+        public Rol Rol { get; set; }
 
-        public Usuario(String eMail, String password, String nombreApellido, Perfil perfil) 
+        public Usuario(String eMail, String password, String nombreApellido, Rol rol) 
         {
-            this.Perfil = perfil;
+            this.Rol = rol;
             this.NombreApellido = nombreApellido;
             this.EMail = eMail;
             this.Password = password;
