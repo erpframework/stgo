@@ -1,25 +1,86 @@
-﻿<%@ Page Title="STGO - Bienvenidos" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="Default.aspx.cs" Inherits="STGO._Default" %>
+﻿<%@ Page Title="STGO - Bienvenidos" Language="C#" MasterPageFile="~/Site.master"
+    AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="STGO._Default" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MenuContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-<div class="grid_12">
-<h1>Bienvenidos</h1>
-</div>
-<div class="clear"></div>
-<div class="grid_6">
-
-<h2>Ingrese al Sistema</h2>
-
-</div>
-
-<div class="grid_6  columnaDestacada" >
-<div class="grid_5 " >
-<h2>Registre su Empresa</h2>
-<br /><br /><br /><br /><br /><br /><br /><br /><br />kkk
-</div>
-</div>
-
+    <div class="grid_12">
+        <h1>
+            Bienvenidos</h1>
+    </div>
+    <div class="clear">
+    </div>
+    <div class="grid_6">
+        <form id="frmLogin" action="default.aspx" method="post">
+        <h2>
+            Ingrese al Sistema</h2>
+        <br />
+        <asp:Label ID="lblUsuarioLogin" Text="Usuario: " runat="server" AssociatedControlID="txtUsuarioLogin" />
+        <asp:TextBox ID="txtUsuarioLogin" runat="server" ValidationGroup="valGrupoLogin"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rqfTxtUsuarioLogin" runat="server" ControlToValidate="txtUsuarioLogin"
+            ErrorMessage="Debe ingresar el usuario/email" Display="Dynamic" ValidationGroup="valGrupoLogin"></asp:RequiredFieldValidator>
+        <asp:RegularExpressionValidator ID="revTxtUsuarioLogin" runat="server" ValidationExpression="^([a-zA-Z0-9]+[a-zA-Z0-9._%-]*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4})$"
+            ErrorMessage="El nombre de usuario debe tener formato de email." Display="Dynamic"
+            ControlToValidate="txtUsuarioLogin" ValidationGroup="valGrupoLogin"></asp:RegularExpressionValidator>
+        <br />
+        <asp:Label ID="lblPasswordLogin" Text="Contraseña: " runat="server" AssociatedControlID="txtPasswordLogin" />
+        <asp:TextBox ID="txtPasswordLogin" runat="server" TextMode="Password" ValidationGroup="valGrupoLogin"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rqfTxtPasswordLogin" runat="server" ErrorMessage="Debe ingresar el password."
+            ControlToValidate="txtPasswordLogin" Display="Dynamic" ValidationGroup="valGrupoLogin"></asp:RequiredFieldValidator>
+        <br />
+        <asp:Button ID="btnLogin" runat="server" Text="Ingresar" CausesValidation="true"
+            ValidationGroup="valGrupoLogin" />
+        </form>
+    </div>
+    <div class="grid_6  columnaDestacada">
+        <div class="grid_5 ">
+            <form id="frmRegistro" action="default.aspx" method="post">
+            <h2>
+                Registre su Empresa</h2>
+            <br />
+            <asp:Label ID="lblRazonSocialReg" Text="Razón Social: " runat="server" AssociatedControlID="txtRazonSocialReg" />
+            <asp:TextBox ID="txtRazonSocialReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rqfRazonSocialReg" runat="server" ControlToValidate="txtRazonSocialReg"
+                ErrorMessage="Debe completar la razón social." Display="Dynamic"></asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblCuitReg" Text="Cuit: " runat="server" AssociatedControlID="txtCuitReg" />
+            <asp:TextBox ID="txtCuitReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rqfCuitReg" runat="server" ControlToValidate="txtCuitReg"
+                ErrorMessage="Debe completar el cuit." Display="Dynamic"></asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblTelefonoReg" Text="Teléfono: " runat="server" AssociatedControlID="txtTelefonoReg" />
+            <asp:TextBox ID="txtTelefonoReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rqfTelefonoReg" runat="server" ControlToValidate="txtTelefonoReg"
+                ErrorMessage="Debe completar el teléfono." Display="Dynamic"></asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblUsuarioReg" Text="EMail: " runat="server" AssociatedControlID="txtUsuarioReg" />
+            <asp:TextBox ID="txtUsuarioReg" runat="server" ValidationGroup="valGrupoReg" ToolTip="El Email lo identificará como futuro usuario en el sistema."></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rqfUsuarioReg" runat="server" ValidationGroup="valGrupoReg"
+                ErrorMessage="Debe completar el email." Display="Dynamic"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="revUsuarioReg" runat="server" ValidationExpression="^([a-zA-Z0-9]+[a-zA-Z0-9._%-]*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4})$"
+                ErrorMessage="El email ingresado es inválido." Display="Dynamic" ControlToValidate="txtUsuarioReg"
+                ValidationGroup="valGrupoReg"></asp:RegularExpressionValidator>
+            <br />
+            <asp:Label ID="lblPasswordReg" Text="Contraseña: " runat="server" AssociatedControlID="txtPasswordReg" />
+            <asp:TextBox ID="txtPasswordReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rqfPasswordReg" runat="server" ControlToValidate="txtPasswordReg"
+                ErrorMessage="Debe ingresar una contraseña." ValidationGroup="valGrupoReg"></asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblPasswordConfirmReg" Text="Repetir Contraseña: " runat="server" AssociatedControlID="txtPasswordConfirmReg" />
+            <asp:TextBox ID="txtPasswordConfirmReg" runat="server" ValidationGroup="valGrupoReg"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rqfPasswordConfirmReg" runat="server" ControlToValidate="txtPasswordConfirmReg"
+                ErrorMessage="Debe confirmar la contraseña." ValidationGroup="valGrupoReg" Display="Dynamic"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="cmvPasswordConfirmReg" runat="server" ControlToValidate="txtPasswordConfirmReg"
+                ControlToCompare="txtPasswordReg" Operator="Equal" ValidationGroup="valGrupoReg"
+                ErrorMessage="Las contraseñas ingresadas deben ser iguales." Display="Dynamic"></asp:CompareValidator>
+            <br />
+            <br />
+            <br />
+            <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" CausesValidation="true"
+                ValidationGroup="valGrupoReg" />
+            </form>
+        </div>
+    </div>
 </asp:Content>
