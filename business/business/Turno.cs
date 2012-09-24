@@ -8,5 +8,11 @@ namespace business
     public class Turno
     {
 
+        public String Reservador { get; set; }
+        public DateTime FechaHoraInicio { get; set; }
+        public DateTime FechaHoraFin { get; set; }
+        public String Descripcion { get; set; }
+
+
     }
 }
