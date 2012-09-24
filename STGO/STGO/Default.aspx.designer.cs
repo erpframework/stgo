@@ -139,6 +139,15 @@ namespace STGO {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rqfCuitReg;
         
         /// <summary>
+        /// revCuitReg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCuitReg;
+        
+        /// <summary>
         /// lblTelefonoReg control.
         /// </summary>
         /// <remarks>
@@ -164,6 +173,15 @@ namespace STGO {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rqfTelefonoReg;
+        
+        /// <summary>
+        /// revTelefonoReg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revTelefonoReg;
         
         /// <summary>
         /// lblUsuarioReg control.
