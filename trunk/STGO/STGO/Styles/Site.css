@@ -34,7 +34,7 @@ body
 {
     list-style-type: none;
     text-align: left;
-    height: 45px;
+    padding: 10px 0;
     background-color: #444;
 }
 #menu li
@@ -121,8 +121,18 @@ body
 .popup
 {background-color:#FFF;
  background-image:none;
+ text-align:left;
+ padding-top:25px;
+width:440px;
+ height:100px;
+ overflow:hidden;
+
+}
+
+.popup div
+{width:400px;
  text-align:center;
- padding-top:50px;
+
 }
 
 
@@ -132,4 +142,22 @@ body
  text-align:right;   
 }
 
+
+
+
+.tabla-item, .tabla-titulo
+{
+ margin-top: 5px;
+  margin-bottom: 5px;  
+}
+
+.tabla-titulo
+{ border-bottom:2px solid #444;
+ font-weight:bold;
+}
+
+.tabla-item
+{
+   border-bottom:1px solid #444; 
+    }
 

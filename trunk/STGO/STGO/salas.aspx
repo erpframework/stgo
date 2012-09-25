@@ -2,11 +2,7 @@
     CodeBehind="salas.aspx.cs" Inherits="STGO.salas" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadPagConMenu" runat="server">
-    <script type="text/javascript" src="Scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-    <script type="text/javascript" src="Scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <link rel="stylesheet" type="text/css" href="Scripts/fancybox/jquery.fancybox-1.3.4.css"
-        media="screen" />
-    <script type="text/javascript" src="Scripts/fancybox/launch.fancybox.js"></script>
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainPaginaConMenu" runat="server">
     <div class="grid_12">
@@ -16,6 +12,56 @@
         <asp:DropDownList ID="liEmpresas" runat="server">
         </asp:DropDownList>
         (sólo para superusuario)<br />
-        <a href="cantidadDeSalas.aspx" class="fancy">modificar cantidad de salas</a>
+    
     </div>
+
+<div class="grid_12 tabla-titulo">
+<div class="grid_3 alpha">Nombre</div>
+<div class="grid_1">F. Turno</div>
+<div class="grid_1">Múltiplos</div>
+<div class="grid_1">Inicio</div>
+<div class="grid_1">Cierre</div>
+<div class="grid_1 omega"></div>
+</div>
+
+<div class="clear"></div>
+<div class="grid_12 tabla-item">
+<div class="grid_3 alpha">Kinesiología</div>
+<div class="grid_1">15 min.</div>
+<div class="grid_1">Si</div>
+<div class="grid_1">8:00</div>
+<div class="grid_1">21:00</div>
+<div class="grid_1 omega"><a href="" class="fancy">Editar</a></div>
+</div>
+<div class="clear"></div>
+<div class="grid_12 tabla-item">
+<div class="grid_3 alpha">Kinesiología</div>
+<div class="grid_1">15 min.</div>
+<div class="grid_1">Si</div>
+<div class="grid_1">8:00</div>
+<div class="grid_1">21:00</div>
+<div class="grid_1 omega"><a href="" class="fancy">Editar</a></div>
+</div>
+<div class="clear"></div>
+<div class="grid_12 tabla-item">
+<div class="grid_3 alpha">Kinesiología</div>
+<div class="grid_1">15 min.</div>
+<div class="grid_1">Si</div>
+<div class="grid_1">8:00</div>
+<div class="grid_1">21:00</div>
+<div class="grid_1 omega"><a href="" class="fancy">Editar</a></div>
+</div>
+<div class="clear"></div>
+<div class="grid_12 tabla-item">
+<div class="grid_3 alpha">Kinesiología</div>
+<div class="grid_1">15 min.</div>
+<div class="grid_1">Si</div>
+<div class="grid_1">8:00</div>
+<div class="grid_1">21:00</div>
+<div class="grid_1 omega"><a href="" class="fancy">Editar</a></div>
+</div>
+<div class="clear"></div>
+
+
+
 </asp:Content>

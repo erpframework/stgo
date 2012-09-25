@@ -3,7 +3,7 @@
 
 			$("a.fancy").fancybox({
 				'width'				: '35%',
-				'height'			: '35%',
+				'height'			: '25%',
 				'autoScale'			: false,
 				'transitionIn'		: 'elastic',
 				'transitionOut'		: 'elastic',
