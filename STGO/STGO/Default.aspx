@@ -13,7 +13,7 @@
     <div class="clear">
     </div>
     <div class="grid_6">
-        <form id="frmLogin" action="default.aspx" method="post">
+      
         <h2>
             Ingrese al Sistema</h2>
         <br />
@@ -116,7 +116,7 @@
       <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" CausesValidation="true"
             ValidationGroup="valGrupoReg" /> </div>
        
-        </form>
+       
     </div>
     </div>
 </asp:Content>
