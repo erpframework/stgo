@@ -178,6 +178,7 @@
     <Content Include="bin\Newtonsoft.Json.Net35.dll" />
     <Content Include="bin\Newtonsoft.Json.Net35.xml" />
     <Content Include="cantidadDeSalas.aspx" />
+    <Content Include="DataFeed.aspx" />
     <Content Include="Edit.aspx" />
     <Content Include="miperfil.aspx" />
     <Content Include="salas.aspx" />
@@ -296,12 +297,16 @@
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Content Include="App_Code\DataFeedClass.cs" />
     <Compile Include="cantidadDeSalas.aspx.cs">
       <DependentUpon>cantidadDeSalas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="cantidadDeSalas.aspx.designer.cs">
       <DependentUpon>cantidadDeSalas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataFeed.aspx.cs">
+      <DependentUpon>DataFeed.aspx</DependentUpon>
     </Compile>
     <Compile Include="Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
