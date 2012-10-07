@@ -7,7 +7,7 @@ using System.Configuration;
 using System.Collections;
 using fn = wdCalendar.Code.Functions;
 
-namespace wdCalendar.Code
+namespace wdCalendar.Code 
 {
 
     /// <summary>
