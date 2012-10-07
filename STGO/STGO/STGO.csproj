@@ -56,7 +56,6 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="activar-desactivar-salas.aspx" />
-    <Content Include="bin\Schedule2.dll" />
     <Content Include="cantidadDeSalas.aspx" />
     <Content Include="miperfil.aspx" />
     <Content Include="salas.aspx" />
@@ -220,6 +219,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
