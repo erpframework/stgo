@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaConMenu.master" AutoEventWireup="true"
     CodeBehind="turnos.aspx.cs" Inherits="STGO.turnos" %>
+    <%@ Register TagPrefix="rw" Namespace="rw" Assembly="Schedule2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadPagConMenu" runat="server">
     <title>STGO-Turnos</title>
@@ -15,5 +16,11 @@
         <asp:DropDownList ID="liSalas" runat="server">
         </asp:DropDownList><br />
         <asp:Button ID="btnNuevoTurno" runat="server" Text="Nuevo Turno" class="boton" />
+        
+        
+
+
+
+
     </div>
 </asp:Content>
