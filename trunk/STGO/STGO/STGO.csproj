@@ -307,6 +307,7 @@
     </Compile>
     <Compile Include="DataFeed.aspx.cs">
       <DependentUpon>DataFeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
