@@ -76,7 +76,7 @@
                 var eurl = "edit.aspx?id={0}&start={2}&end={3}&isallday={4}&title={1}";
                 if (data) {
                     var url = StrFormat(eurl, data);
-                    OpenModelWindow(url, { width: 600, height: 400, caption: "Manage  The Calendar", onclose: function () {
+                    OpenModelWindow(url, { width: 600, height: 400, caption: "Editar Turno(s)", onclose: function () {
                         $("#gridcontainer").reload();
                     }
                     });
@@ -94,7 +94,7 @@
 
                 $.alerts.okButton = "Ok";
                 $.alerts.cancelButton = "Cancel";
-                hiConfirm("Are You Sure to Delete this Event", 'Confirm', function (r) { r && callback(0); });
+                hiConfirm("¿Desea eliminar este turno?", 'Confirm', function (r) { r && callback(0); });
             }
             function wtd(p) {
                 if (p && p.datestrshow) {
@@ -151,7 +151,7 @@
             $("#faddbtn").click(function (e) {
                 var url = "add.aspx";
 
-                OpenModelWindow(url, { width: 600, height: 400, caption: "Add Event", onclose: function () {
+                OpenModelWindow(url, { width: 600, height: 400, caption: "Nuevo Turno", onclose: function () {
                     $("#gridcontainer").reload();
                 }
                 });

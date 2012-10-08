@@ -204,7 +204,7 @@
               <input MaxLength="10" class="required date" id="etpartdate" name="etpartdate" style="padding-left:2px;width:90px;" type="text" value='<%=sED %>' />                       
               <input MaxLength="50" class="required time" id="etparttime" name="etparttime" style="width:40px;" type="text" value='<%=sET %>'/>                                            
               <label class="checkp"> 
-                <input ID="IsAllDayEvent" runat="server" name="IsAllDayEvent" type="checkbox" value="1" />          All Day Event                      
+                <input id="IsAllDayEvent" runat="server" name="IsAllDayEvent" type="checkbox" value="1" />          All Day Event                      
               </label>                    
             </div>                
           </label>                 
