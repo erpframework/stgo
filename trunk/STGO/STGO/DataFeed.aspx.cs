@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using df = wdCalendar.Code.DataFeedClass;
-using fn = wdCalendar.Code.Functions;
+using df = STGO.DataFeedClass;
+using fn = STGO.Functions;
 using Newtonsoft.Json;
 
 public partial class DataFeed : System.Web.UI.Page

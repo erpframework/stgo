@@ -5,9 +5,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Collections;
-using fn = wdCalendar.Code.Functions;
+using fn = STGO.Functions;
 
-namespace wdCalendar.Code 
+namespace STGO
 {
 
     /// <summary>
@@ -602,4 +602,4 @@ namespace wdCalendar.Code
 
     } // End class Functions
 
-} // End namespace wdCalendar.Code
+}

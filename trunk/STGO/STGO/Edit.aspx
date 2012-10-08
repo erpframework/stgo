@@ -5,15 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Edit Event</title>
-    <script src="JS/wdCalendar/src/jquery.js" type="text/javascript"></script>    
-    <script src="JS/wdCalendar/src/Plugins/Common.js" type="text/javascript"></script>        
-    <script src="JS/wdCalendar/src/Plugins/jquery.form.js" type="text/javascript"></script>     
-    <script src="JS/wdCalendar/src/Plugins/jquery.validate.js" type="text/javascript"></script>     
-    <script src="JS/wdCalendar/src/Plugins/datepicker_lang_US.js" type="text/javascript"></script>        
-    <script src="JS/wdCalendar/src/Plugins/jquery.datepicker.js" type="text/javascript"></script>     
-    <script src="JS/wdCalendar/src/Plugins/jquery.dropdown.js" type="text/javascript"></script>     
-    <script src="JS/wdCalendar/src/Plugins/jquery.colorselect.js" type="text/javascript"></script>
-    <script src="JS/wdCalendar/src/jquery.getQueryParam.min.js" type="text/javascript"></script>
+    <script src="Scripts/wdCalendar/src/jquery.js" type="text/javascript"></script>    
+    <script src="Scripts/wdCalendar/src/Plugins/Common.js" type="text/javascript"></script>        
+    <script src="Scripts/wdCalendar/src/Plugins/jquery.form.js" type="text/javascript"></script>     
+    <script src="Scripts/wdCalendar/src/Plugins/jquery.validate.js" type="text/javascript"></script>     
+    <script src="Scripts/wdCalendar/src/Plugins/datepicker_lang_US.js" type="text/javascript"></script>        
+    <script src="Scripts/wdCalendar/src/Plugins/jquery.datepicker.js" type="text/javascript"></script>     
+    <script src="Scripts/wdCalendar/src/Plugins/jquery.dropdown.js" type="text/javascript"></script>     
+    <script src="Scripts/wdCalendar/src/Plugins/jquery.colorselect.js" type="text/javascript"></script>
+    <script src="Scripts/wdCalendar/src/jquery.getQueryParam.min.js" type="text/javascript"></script>
     
     <script type="text/javascript">
                 
@@ -204,7 +204,7 @@
               <input MaxLength="10" class="required date" id="etpartdate" name="etpartdate" style="padding-left:2px;width:90px;" type="text" value='<%=sED %>' />                       
               <input MaxLength="50" class="required time" id="etparttime" name="etparttime" style="width:40px;" type="text" value='<%=sET %>'/>                                            
               <label class="checkp"> 
-                <input id="IsAllDayEvent" runat="server" name="IsAllDayEvent" type="checkbox" value="1" />          All Day Event                      
+                <input ID="IsAllDayEvent" runat="server" name="IsAllDayEvent" type="checkbox" value="1" />          All Day Event                      
               </label>                    
             </div>                
           </label>                 
