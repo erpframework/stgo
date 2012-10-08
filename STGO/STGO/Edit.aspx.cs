@@ -29,8 +29,8 @@ public partial class Edit : System.Web.UI.Page
     protected void GetEventDetail()
     {
 
-        if (Request["isallday"] != null && Request["isallday"] == "1")
-            IsAllDayEvent.Attributes.Add("checked", "");
+       // if (Request["isallday"] != null && Request["isallday"] == "1")
+         //   IsAllDayEvent.Attributes.Add("checked", "");
 
         string sStp = "proc_JQCalendar_GetEventDetail";
 
