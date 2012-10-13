@@ -12,6 +12,10 @@
     <AssemblyName>services</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,17 +45,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceImpl\EmpresaService.cs" />
+    <Compile Include="ServiceImpl\ParametroService.cs" />
+    <Compile Include="ServiceImpl\RegistracionService.cs" />
+    <Compile Include="ServiceImpl\RolService.cs" />
+    <Compile Include="ServiceImpl\UsuarioService.cs" />
+    <Compile Include="Service\IEmpresaService.cs" />
+    <Compile Include="Service\IParametroService.cs" />
+    <Compile Include="Service\IRegistracionService.cs" />
+    <Compile Include="Service\IRolService.cs" />
+    <Compile Include="Service\IUsuarioService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\business\business\business.csproj">
       <Project>{85116091-71F3-4420-8E61-22970558206F}</Project>
       <Name>business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\persistence\persistence.csproj">
+    <ProjectReference Include="..\persistence\Persistence.csproj">
       <Project>{85B9FA7E-5113-40FD-ABC8-E9CDF36DDBD2}</Project>
-      <Name>persistence</Name>
+      <Name>Persistence</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
