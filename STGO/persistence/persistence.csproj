@@ -12,6 +12,10 @@
     <AssemblyName>persistence</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,7 +45,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ado.cs" />
+    <Compile Include="DAOImpl\EmpresaDAO.cs" />
+    <Compile Include="DAOImpl\GenericDAO.cs" />
+    <Compile Include="DAO\IEmpresaDAO.cs" />
+    <Compile Include="DAO\IGenericDAO.cs" />
+    <Compile Include="DAO\IParametroDAO.cs" />
+    <Compile Include="DAO\IRegistracionDAO.cs" />
+    <Compile Include="DAO\IRolDAO.cs" />
+    <Compile Include="DAO\IUsuarioDAO.cs" />
+    <Compile Include="DAOImpl\ParametroDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAOImpl\RegistracionDAO.cs" />
+    <Compile Include="DAOImpl\RolDAO.cs" />
+    <Compile Include="DAOImpl\UsuarioDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\business\business\business.csproj">

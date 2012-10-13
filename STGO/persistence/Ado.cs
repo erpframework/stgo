@@ -38,7 +38,7 @@ namespace BibliotecasDeBase.AccesoADatos
     		
 	    }
 
-        private bool Conectar()
+        public bool Conectar()
         {
             sConexion = CadenaConexion();
 
@@ -56,11 +56,11 @@ namespace BibliotecasDeBase.AccesoADatos
         private string CadenaConexion()
         {
             SqlConnectionStringBuilder csb = new SqlConnectionStringBuilder();
-            csb.DataSource = @"HOME\SQL2005";
-            csb.InitialCatalog = "TallerASPNET_ADO";
+            csb.DataSource = @"(local)";
+            csb.InitialCatalog = "STGO";
             csb.IntegratedSecurity = false;
-            csb.UserID = "sa";
-            csb.Password = "globons";
+            csb.UserID = "stgo";
+            csb.Password = "adminadmin";
 
             return csb.ConnectionString;
         }
