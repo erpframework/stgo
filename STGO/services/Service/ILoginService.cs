@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace business.DER
+namespace Services.Service
 {
-    public interface ITurnoDAO
+    interface ILoginService
     {
+        void login(String email,String password);
     }
 }

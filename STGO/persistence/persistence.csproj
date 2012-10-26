@@ -44,14 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ado.cs" />
     <Compile Include="DAOImpl\EmpresaDAO.cs" />
     <Compile Include="DAOImpl\GenericDAO.cs" />
+    <Compile Include="DAOImpl\SalaDAO.cs" />
     <Compile Include="DAO\IEmpresaDAO.cs" />
     <Compile Include="DAO\IGenericDAO.cs" />
     <Compile Include="DAO\IParametroDAO.cs" />
     <Compile Include="DAO\IRegistracionDAO.cs" />
     <Compile Include="DAO\IRolDAO.cs" />
+    <Compile Include="DAO\ISalaDAO.cs" />
+    <Compile Include="DAO\ITurnoDAO.cs" />
     <Compile Include="DAO\IUsuarioDAO.cs" />
     <Compile Include="DAOImpl\ParametroDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

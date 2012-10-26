@@ -46,14 +46,20 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceImpl\EmpresaService.cs" />
+    <Compile Include="ServiceImpl\LoginService.cs" />
     <Compile Include="ServiceImpl\ParametroService.cs" />
     <Compile Include="ServiceImpl\RegistracionService.cs" />
     <Compile Include="ServiceImpl\RolService.cs" />
+    <Compile Include="ServiceImpl\SalaService.cs" />
+    <Compile Include="ServiceImpl\TurnoService.cs" />
     <Compile Include="ServiceImpl\UsuarioService.cs" />
     <Compile Include="Service\IEmpresaService.cs" />
+    <Compile Include="Service\ILoginService.cs" />
     <Compile Include="Service\IParametroService.cs" />
     <Compile Include="Service\IRegistracionService.cs" />
     <Compile Include="Service\IRolService.cs" />
+    <Compile Include="Service\ISalaService.cs" />
+    <Compile Include="Service\ITurnoService.cs" />
     <Compile Include="Service\IUsuarioService.cs" />
   </ItemGroup>
   <ItemGroup>

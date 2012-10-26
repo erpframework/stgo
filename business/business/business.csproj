@@ -44,8 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DER\ISalaDAO.cs" />
-    <Compile Include="DER\ITurnoDAO.cs" />
+    <Compile Include="BusinessException.cs" />
     <Compile Include="Empresa.cs" />
     <Compile Include="Parametro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
