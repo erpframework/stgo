@@ -11,10 +11,17 @@ namespace Persistence.DAO
 
         String CadenaConexion();
 
-        bool ComenzarTransaccion();
+        void ComenzarTransaccion();
 
-        bool FinalizarTransaccion();
+        void FinalizarTransaccion();
 
-        bool CancelarTransaccion();
+        void CancelarTransaccion();
+    }
+
+    public interface IDAOBase<T>
+    {
+
+        IList<T> ObtenerTodos();
+
     }
 }

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Services;
+using Services.Service;
 
 namespace Services.Impl
 {
-    class RegistracionService:IRegistracionService
+    public class RegistracionService:IRegistracionService
     {
     }
 }

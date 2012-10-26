@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Services;
+using business;
 
 namespace Services.Service
 {
-    public interface IEmpresaService:IEmpresaService
+    interface ISalaService
     {
+        List<Sala> obtenerSalas();
+
+        List<Sala> obtenerSalasEmpresa(long idEmpresa);
+
     }
 }

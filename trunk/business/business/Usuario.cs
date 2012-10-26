@@ -13,6 +13,9 @@ namespace business
         public String Password{ get; set; }
         public Rol Rol { get; set; }
 
+        public Usuario() { 
+        }
+
         public Usuario(String eMail, String password, String descripcion, Rol rol) 
         {
             this.Rol = rol;
