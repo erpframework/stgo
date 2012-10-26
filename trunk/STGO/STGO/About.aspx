@@ -4,10 +4,20 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <h2>
-        Acerca de
-    </h2>
+    
+    <div class="container_12">
+    <div class="grid_12">
+    <h1>
+        Acerca de STGO
+    </h1>
     <p>
-        Coloque contenido aquí.
+        Diseño y programación por:
     </p>
+    <br />
+    <ul>
+    <li>Fichera, Alejandro - DNI: 28230014</li>
+    <li>Margenats, Juan Diego - DNI: 28030368</li>
+    </ul>
+    </div>
+</div>
 </asp:Content>
